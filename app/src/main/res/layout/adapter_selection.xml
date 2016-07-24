@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.game.taoy3.qingker.widght.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/horizontal_150"
+        android:layout_height="@dimen/vertical_100"
+        android:src="@drawable/selection"/>
+    <TextView
+        android:layout_margin="@dimen/horizontal_10"
+        android:id="@+id/tip"
+        android:layout_toRightOf="@+id/image"
+        android:text="​71%的小伙伴浏览了"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/tip"
+        android:layout_alignLeft="@+id/tip"
+        android:layout_alignRight="@+id/tip"
+        android:text="饵多鱼傻速来！苏梅岛出海垂钓、烤鱼BBQ1日游"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

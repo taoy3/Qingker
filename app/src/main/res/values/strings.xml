@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Qingker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hot_dest">热门目的地</string>
+    <string name="find_my_like">发现我的兴趣</string>
+    <string name="find_next_station">发现下一站</string>
+    <string name="find_select_team">发现精选主题</string>
+    <string name="find_week_hot">发现一周最热</string>
+    <string name="not_suggest">这家伙还没有写自我介绍呢?</string>
+    <string name="find">发现</string>
+    <string name="dest">目的地</string>
+    <string name="me">我的</string>
+    <string name="selected">精选</string>
+</resources>

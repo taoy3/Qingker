@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.taoy3.qingker.fragment.MyFragment">
+
+    <FrameLayout
+        android:layout_below="@+id/head_view"
+        android:background="@mipmap/welcome5"
+        android:id="@+id/head_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_150">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"/>
+    </FrameLayout>
+    <com.game.taoy3.qingker.widght.CirImageView
+        android:id="@+id/user_icon"
+        android:layout_marginTop="@dimen/vertical_125"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/vertical_50"
+        android:layout_below="@+id/head_view"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/note"
+        android:gravity="center"
+        android:layout_below="@+id/user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/horizontal_10"
+        android:text="@string/not_suggest"/>
+</RelativeLayout>

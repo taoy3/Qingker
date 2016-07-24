@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.taoy3.qingker.fragment.SelectedFragment">
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/select_recycler"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</FrameLayout>

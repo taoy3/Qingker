@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.game.taoy3.qingker.fragment.FindFragment">
+
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.game.taoy3.qingker.widght.AutoScrollViewPager
+                android:id="@+id/articles"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_150" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/horizontal_10"
+                android:text="@string/find_my_like" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tags"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_150" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/horizontal_10"
+                android:text="@string/find_next_station" />
+
+            <com.game.taoy3.qingker.widght.ChildGridView
+                android:id="@+id/next_stops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/horizontal_10"
+                android:text="@string/find_select_team" />
+
+            <com.game.taoy3.qingker.widght.ChildListView
+                android:id="@+id/collections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/horizontal_10"
+                android:text="@string/find_week_hot" />
+
+            <com.game.taoy3.qingker.widght.ChildListView
+                android:id="@+id/top_selections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

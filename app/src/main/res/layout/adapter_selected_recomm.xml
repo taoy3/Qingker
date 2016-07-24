@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.game.taoy3.qingker.widght.CirImageView
+        android:id="@+id/user_icon"
+        android:src="@drawable/user"
+        android:layout_margin="@dimen/horizontal_10"
+        android:layout_width="@dimen/horizontal_50"
+        android:layout_height="@dimen/horizontal_50" />
+    <TextView
+        android:text="蒸蛋"
+        android:layout_alignTop="@+id/user_icon"
+        android:layout_toRightOf="@+id/user_icon"
+        android:id="@+id/user_name"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/vertical_25" />
+    <TextView
+        android:gravity="center"
+        android:text="没有梦想,何必远方."
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:id="@+id/user_msg"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/vertical_25" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_below="@+id/user_icon"
+        android:src="@drawable/bg_sel"
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_200"/>
+    <TextView
+        android:text="魅力釜山"
+        android:layout_above="@+id/sub_title"
+        android:layout_alignLeft="@+id/sub_title"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="@dimen/horizontal_5"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/bg_image"
+        android:text="龙头山+札嘎其市场+BIFF广场+甘川文化村"
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="@dimen/horizontal_10"
+        android:layout_below="@+id/bg_image"
+        android:id="@+id/short_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="魅力釜山等待着你！趁着春暖花开，来到这座海港城市，度过愉快的时光吧！龙头山公园、国际市场、札嘎其市场、BIFF广场、甘川文化..."/>
+<TextView
+    android:drawablePadding="@dimen/horizontal_5"
+    android:drawableLeft="@mipmap/collect_location"
+    android:layout_alignRight="@+id/short_desc"
+    android:layout_below="@+id/short_desc"
+    android:id="@+id/address"
+    android:text="韩国, 釜山"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="@dimen/horizontal_10"
+        android:layout_toLeftOf="@+id/address"
+        android:drawablePadding="@dimen/horizontal_5"
+        android:drawableLeft="@mipmap/heart_s2"
+        android:layout_below="@+id/short_desc"
+        android:id="@+id/like_count"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_below="@+id/user_icon"
+        android:src="@drawable/bg_sel"
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vertical_200"/>
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/horizontal_10"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="魅力釜山"
+        android:layout_alignLeft="@+id/sub_title"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="@dimen/horizontal_5"
+        android:textColor="@color/white"
+        android:layout_below="@+id/title"
+        android:text="龙头山+札嘎其市场+BIFF广场+甘川文化村"
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+    android:drawablePadding="@dimen/horizontal_5"
+    android:drawableLeft="@mipmap/collect_location"
+    android:layout_alignRight="@+id/short_desc"
+    android:layout_below="@+id/sub_title"
+    android:id="@+id/address"
+    android:text="韩国, 釜山"
+        android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:paddingLeft="@dimen/horizontal_20"
+        android:layout_toRightOf="@+id/address"
+        android:drawablePadding="@dimen/horizontal_5"
+        android:drawableLeft="@mipmap/collect_time"
+        android:layout_below="@+id/sub_title"
+        android:id="@+id/like_count"
+        android:text="02月01日-12月31日"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

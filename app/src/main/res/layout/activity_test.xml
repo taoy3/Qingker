@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.taoy3.qingker.TestActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/re_canvas"
+        android:text="重画"
+        android:layout_toRightOf="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/back"
+        android:text="撤一步"
+        android:layout_alignLeft="@+id/re_canvas"
+        android:layout_below="@id/re_canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/color"
+        android:layout_alignLeft="@+id/back"
+        android:layout_below="@id/back"
+        android:text="颜色"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/stroked"
+        android:layout_alignLeft="@+id/color"
+        android:layout_below="@id/color"
+        android:text="粗细"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

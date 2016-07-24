@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.taoy3.qingker.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_group" />
+
+    <RadioGroup
+        android:id="@id/main_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/main_radio"
+            android:drawableTop="@drawable/sel_bg"
+            android:text="@string/selected" />
+
+        <RadioButton
+            android:text="@string/find"
+            style="@style/main_radio"
+            android:drawableTop="@drawable/dicover_bg" />
+
+        <RadioButton
+            android:text="@string/dest"
+            style="@style/main_radio"
+            android:drawableTop="@drawable/dest_bg" />
+
+        <RadioButton
+            android:text="@string/me"
+            style="@style/main_radio"
+            android:drawableTop="@drawable/my_bg" />
+
+    </RadioGroup>
+</RelativeLayout>
